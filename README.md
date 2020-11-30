@@ -1,5 +1,15 @@
-# javascript-canvas-fun
-All you need to calculate things and draw them on an HTML canvas element.
+# javascript-canvas-mandelbrot
+
+The Mandelbrot set has its origin in complex dynamics, a field first investigated by the French mathematicians Pierre Fatou and Gaston Julia at the beginning of the 20th century. This fractal was first defined and drawn in 1978 by Robert W. Brooks and Peter Matelsk.
+
+## Examples 
+
+Here are some sample outputs
+
+![Example1](examples/example1.JPG?raw=true)
+![Example2](examples/example2.JPG?raw=true)
+![Example3](examples/example3.JPG?raw=true)
+![Example4](examples/example4.JPG?raw=true)
 
 ## Lizenz
 
