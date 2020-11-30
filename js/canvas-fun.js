@@ -177,6 +177,19 @@ canvas.addEventListener('mouseup', e => {
     xEnd = (ratioWidth * xMouseEnd) + oldxStart;
     yEnd = (ratioHeight * (fixedRatioY + yMouseStart)) + oldyStart;
 
+    //swap if marked from right to left
+    if(xStart > xEnd){
+        var tmp = xStart;
+        xStart = xEnd;
+        xEnd = tmp;
+    }
+
+    if(yStart > yEnd){
+        var tmp = yStart;
+        yStart = yEnd;
+        yEnd = tmp;      
+    }
+
     //show the coordinates
     document.getElementById("xs").innerText = "xs: " + xStart;
     document.getElementById("xe").innerText = "xe: " + yStart;
