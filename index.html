@@ -6,17 +6,26 @@
         <link rel="stylesheet" href="css/canvas-fun.css">
     </head>
     <body>
+        <div id="menue">
+            <ul>
+                <li><a href="https://www.mathiaswilke.de">mathiaswilke.de</a></li>
+                <li><a href="https://www.mathiaswilke.de/pythagoras">Pythagoras</a></li>
+                <li><a href="https://www.mathiaswilke.de/sierpinski">Sierpinski</a></li>
+                <li><a href="https://www.mathiaswilke.de">V-Tree</a></li>
+                <li><a href="https://www.mathiaswilke.de/mandelbrot">Mandelbrot</a></li>
+            </ul>
+        </div>
         <canvas id="screen" width="800px" height="450px"></canvas>
-        <!-- let us add some ui elements -->
         <div class="slidecontainer">
             <p>SETTINGS</p>
-            <p>My Value</p>
-            <input type="range" min="1" max="11" value="5" class="slider" id="my-first-value">
-            <p>Switch</p>
-            <label class="switch">
-                <input type="checkbox" id="colors">
-                <span class="slide-switch round"></span>
-            </label>
+            <p>Iterations</p>
+            <input type="range" min="10" max="255" value="100" class="slider" id="iterations" onchange="getPixelData()">
+            <p>You are looking at:</p>
+            <p class="coordinate" id="xs">xs: -2.3</p>
+            <p class="coordinate" id="ys">ys: 0.9</p>
+            <p class="coordinate" id="xe">xe: -1.2</p>
+            <p class="coordinate" id="ye">ye: 1.2</p>
+            <p style="color: #FF416C;">beautiful... &#10084;</p>
         </div>
         <script src="js/canvas-fun.js"></script>
     </body>
